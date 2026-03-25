@@ -54,9 +54,9 @@ export async function loginUser(
     }
 
     // Create a cookie with the name of "token" and store our access token in it
-    cookies().set('token', json.accessToken, { httpOnly: true });
+    cookies().set('token', json.data.accessToken, { httpOnly: true });
 
-    return { message: `Logged in user: ${json.email}` };
+    return { message: `Logged in user: ${json.data.email}` };
   } catch (error) {
     console.log(error);
     return { message: 'Failed to log in user' };
