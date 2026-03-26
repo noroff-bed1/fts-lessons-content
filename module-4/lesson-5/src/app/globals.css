@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Share+Tech+Mono&display=swap");
+
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #0f0f1a;
+  --bg-card-hover: #141428;
+  --border: #1a1a3a;
+  --border-glow: #3d3dff;
+  --accent: #00ffcc;
+  --accent-2: #ff2d78;
+  --accent-3: #ffe600;
+  --text-primary: #e8e8ff;
+  --text-secondary: #8888bb;
+  --text-muted: #44446a;
+  --font-display: "Press Start 2P", monospace;
+  --font-body: "VT323", monospace;
+  --font-mono: "Share Tech Mono", monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.15) 0px, rgba(0,0,0,0.15) 1px, transparent 1px, transparent 3px);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.3;
+}
+
+a { color: inherit; text-decoration: none; }

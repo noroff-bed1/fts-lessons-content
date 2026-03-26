@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 300, 3%, 93%; /* background */
+  --primary: 10, 24%, 55%; /* primary */
+  --primary-light: 10, 24%, 65%; /* primary-light */
+  --primary-dark: 10, 24%, 35%; /* primary-dark */
+  --secondary: 200, 7%, 67%; /* secondary */
+  --secondary-light: 200, 7%, 77%; /* secondary-light */
+  --secondary-dark: 200, 7%, 47%; /* secondary-dark */
+  --accent-1: 231, 11%, 65%; /* accent-1 */
+  --accent-2: 224, 14%, 41%; /* accent-2 */
+}
+
+body {
+  font-family: var(--font-inter);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-montserrat);
+}
