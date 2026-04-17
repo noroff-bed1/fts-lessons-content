@@ -27,7 +27,7 @@ export async function registerUser(
       return { message };
     }
 
-    return { message: `Added user with id of: ${json.email}` };
+    return { message: `Added user with id of: ${json.data.email}` };
   } catch (error) {
     return { message: 'Failed to create user' };
   }
