@@ -23,7 +23,8 @@ export async function registerUser(
     });
     const json = await response.json();
     if (!response.ok) {
-      throw new Error(`API responded with status: ${response.status}`);
+      const message = json.errors.map(({ message }) => message).join(", ");
+      return { message };
     }
 
     return { message: `Added user with id of: ${json.email}` };
